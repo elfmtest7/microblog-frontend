@@ -13,7 +13,7 @@
         About
       </b-navbar-item>
       <b-navbar-item v-if="isDev">
-        <span @click="cloudbeesFMOverride">DEV</span>
+        <span @click="rolloutOverride">DEV</span>
       </b-navbar-item>
     </template>
 
@@ -49,7 +49,7 @@ export default {
     logout () {
       this.$store.dispatch('logout')
     },
-    cloudbeesFMOverride: () => {
+    rolloutOverride: () => {
       Rox.showOverrides()
     }
   },
