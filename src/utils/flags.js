@@ -1,7 +1,8 @@
 import Rox from 'rox-browser'
 
 export const Flags = {
-  sidebar: new Rox.Flag(false)
+  sidebar: new Rox.Flag(false),
+  title: new Rox.Flag(false)
 }
 
 async function initRollout () {
@@ -13,5 +14,5 @@ async function initRollout () {
 }
 
 initRollout().then(function () {
-  console.log('Done loading Rollout')
+  console.log('Done loading CloudBees Feature Management')
 })
